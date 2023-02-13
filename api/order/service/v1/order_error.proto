@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package api.order.service.v1;
+import "errors/errors.proto";
+
+option go_package = "beer-shop/api/order/service/v1;v1";
+
+enum OrderServiceErrorReason {
+	option (errors.default_code) = 500;
+
+	UNKNOWN_ERROR = 0;
+}

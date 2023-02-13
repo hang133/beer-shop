@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package api.payment.service.v1;
+
+import "google/api/annotations.proto";
+
+option go_package = "beer-shop/api/payment/service/v1;v1";
+
+service Payment {
+	rpc PaymentAuth (PaymentAuthReq) returns (PaymentAuthReply) {
+	}
+}
+
+message PaymentAuthReq {
+
+}
+
+message PaymentAuthReply {
+
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package api.catalog.service.v1;
+import "errors/errors.proto";
+
+option go_package = "beer-shop/api/catalog/service/v1;v1";
+
+enum CatalogServiceErrorReason {
+	option (errors.default_code) = 500;
+
+	UNKNOWN_ERROR = 0;
+}
